@@ -1,9 +1,9 @@
 import Collumns from "./components/collumns"
 import "./globals.css"
 
-export default function Home() {
+export default function home() {
   return (
-    <main>
+    <main className="">
       <Collumns />
     </main>
   )

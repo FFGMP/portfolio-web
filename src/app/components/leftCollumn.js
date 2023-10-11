@@ -18,7 +18,7 @@ export function LeftCollumn() {
             </div>
             <h1 className="text-xl mt-4">FFGMP</h1>
             <div className="bg-neutral-950 mt-2 max-w-fit px-4 py-0.5 rounded-lg">
-                <p className="text-xs">Programador</p>
+                <p className="text-xs">Programmer</p>
                 {/* Linha hr */}
             </div>
             <hr className="w-8/12 mt-5 opacity-20 mb-5" />
