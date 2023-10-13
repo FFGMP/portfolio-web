@@ -67,7 +67,7 @@ const dataForSkilsSection = [
 
 
 
-export function RightCollumn() {
+export function Resume_RightCollumn() {
 
     return (
         <div className="relative">
@@ -105,4 +105,4 @@ export function RightCollumn() {
 
 }
 
-export default RightCollumn
+export default Resume_RightCollumn

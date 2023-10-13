@@ -18,13 +18,13 @@ const CardWithSoftware = ({ SVG, Title }) => (
             {SVG}
         </div>
         <div>
-            <p id={Title} className="text-center mb-12"></p>
+            <p id={Title} className="text-center mb-9"></p>
         </div>
     </div>
 
 );
 
-export function RightCollumn() {
+export function About_RightCollumn() {
 
     return (
         <div className="relative">
@@ -68,7 +68,7 @@ export function RightCollumn() {
                 />
             </div>
 
-            <h1 className="text-3xl pl-8 pt-6 pb-5 mb-8">What software?</h1>
+            <h1 className="text-3xl pl-8 pt-6 pb-5 mb-3">What software?</h1>
 
             <div className="flex overflow-auto px-8 gap-10 md:gap-20 lg:gap-28 mb-6">
 
@@ -119,4 +119,4 @@ export function RightCollumn() {
 
 }
 
-export default RightCollumn
+export default About_RightCollumn
