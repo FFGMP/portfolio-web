@@ -1,4 +1,4 @@
-import Menu from "../menu";
+import Menu from "../Menu/menu";
 import FilterManager from "./filterManager";
 
 
@@ -9,7 +9,6 @@ export function Portfolio_RightCollumn() {
             <Menu />
             <hr className="w-40 h-2 mx-8 bg-current border-0 rounded-md" />
             <FilterManager />
-
         </div >
     )
 }

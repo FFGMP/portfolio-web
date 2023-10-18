@@ -1,4 +1,4 @@
-import Menu from "../menu";
+import Menu from "../Menu/menu";
 
 const CardForWhatICode = ({ SVG, Title, SubTitle }) => (
     <div className="flex-1 hover:scale-110 hover:z-0 xl:hover:scale-105 transition ease-in-out delay-75 shadow-xl items-start shadow-neutral-950 flex gap-x-4 justify-center border p-2 sm:p-10 rounded-lg">
