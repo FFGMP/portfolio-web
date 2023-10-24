@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <main>
-          <div className="max-w-screen-xl flex flex-wrap justify-center gap-2 sm:gap-6 mx-auto p-2 sm:p-4">
+          <div className="max-w-screen-xl flex flex-wrap justify-center gap-2 sm:gap-6 mx-auto p-2">
             <LeftCollumn />
             <div id="RightOne" className="w-full sm:w-[39rem] lg:w-[62rem] xl:w-3/4 mb-16 lg:mb-0 xl:mt-10 rounded-md bg-current bg-neutral-900 border-[1px] border-neutral-700 z-10">
               {children}
