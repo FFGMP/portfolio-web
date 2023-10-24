@@ -131,8 +131,6 @@ const imagesData = [
 
 
 export function Gallery({ filter }) {
-    //console.log(filter);
-
     return (
         <div className='flex justify-center mt-3 mb-11'>
             <div className='grid grid-cols-3 gap-14 auto-cols-max'>
