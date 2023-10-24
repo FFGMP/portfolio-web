@@ -1,12 +1,12 @@
 import Menu from "./components/Menu/menu";
 
 const CardForWhatICode = ({ SVG, Title, SubTitle }) => (
-    <div className="flex-1 hover:scale-110 hover:z-0 xl:hover:scale-105 transition ease-in-out delay-75 shadow-xl items-start shadow-neutral-950 flex gap-x-4 justify-center border p-2 sm:p-10 rounded-lg">
-        <div className="p-2 rounded-md bg-gradient-to-l from-neutral-900 to-neutral-950">
+    <div className="flex-1 shadow-xl xl:items-start shadow-neutral-950 flex flex-col items-center sm:flex-row gap-x-4 justify-center border p-6 sm:p-10 rounded-lg">
+        <div className="p-2 rounded-md">
             {SVG}
         </div>
-        <div className="flex flex-col justify-center">
-            <div>{Title}</div>
+        <div className="flex flex-col text-center sm:text-justify">
+            <div className="font-bold">{Title}</div>
             <div className="min-w-[150.85px] block">{SubTitle}</div>
         </div>
     </div>
@@ -41,30 +41,30 @@ export function About_RightCollumn() {
 
             <h1 className="text-3xl pl-8 pt-6 pb-5">What languages?</h1>
 
-            <div className="flex flex-col lg:flex-row flex-wrap px-4 gap-7 lg:gap-8 mx-4 mb-10">
-                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M23 17h-22v7h22v-7zm-20 5l.863-3h1.275l-.863 3h-1.275zm2.066 0l.863-3h1.275l-.863 3h-1.275zm2.067 0l.863-3h1.275l-.864 3h-1.274zm2.066 0l.863-3h1.274l-.863 3h-1.274zm3.341 0h-1.274l.863-3h1.275l-.864 3zm7.46-.5c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm1-19.5v11h-18v-11h18zm2-2h-22v15h22v-15zm-13 7.5l-2.563-2.5-.771.751 1.794 1.749-1.794 1.749.771.751 2.563-2.5zm7 1.5h-5v1h5v-1z" /></svg>}
+            <div className="flex flex-col sm:flex-row flex-wrap m-4 sm:mx-8 gap-7 lg:gap-8 mb-10">
+                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24"><path d="M23 17h-22v7h22v-7zm-20 5l.863-3h1.275l-.863 3h-1.275zm2.066 0l.863-3h1.275l-.863 3h-1.275zm2.067 0l.863-3h1.275l-.864 3h-1.274zm2.066 0l.863-3h1.274l-.863 3h-1.274zm3.341 0h-1.274l.863-3h1.275l-.864 3zm7.46-.5c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm1-19.5v11h-18v-11h18zm2-2h-22v15h22v-15zm-13 7.5l-2.563-2.5-.771.751 1.794 1.749-1.794 1.749.771.751 2.563-2.5zm7 1.5h-5v1h5v-1z" /></svg>}
                     Title={<p className="text-xl">Python</p>}
-                    SubTitle={<p className="text-sm text-justify">I love programming in Python. It's simple, elegant, and powerful.</p>}
+                    SubTitle={<p className="text-sm text-center sm:text-justify">I love programming in Python. It's simple, elegant, and powerful.</p>}
                 />
 
-                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" /></svg>}
+                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" /></svg>}
                     Title={<p className="text-xl">PHP</p>}
-                    SubTitle={<p className="text-sm text-justify">Programming in PHP is my passion. Simplified web creation.</p>}
+                    SubTitle={<p className="text-sm text-center sm:text-justify">Programming in PHP is my passion. Simplified web creation.</p>}
                 />
 
-                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" /></svg>}
+                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z" /></svg>}
                     Title={<p className="text-xl">JavaScript</p>}
-                    SubTitle={<p className="text-sm text-justify">JavaScript is my passion. Bringing life to the web is my goal.</p>}
+                    SubTitle={<p className="text-sm text-center sm:text-justify">JavaScript is my passion. Bringing life to the web is my goal.</p>}
                 />
 
-                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M23 17h-22v7h22v-7zm-20 5l.863-3h1.275l-.863 3h-1.275zm2.066 0l.863-3h1.275l-.863 3h-1.275zm2.067 0l.863-3h1.275l-.864 3h-1.274zm2.066 0l.863-3h1.274l-.863 3h-1.274zm3.341 0h-1.274l.863-3h1.275l-.864 3zm7.46-.5c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm1-19.5v11h-18v-11h18zm2-2h-22v15h22v-15zm-13 7.5l-2.563-2.5-.771.751 1.794 1.749-1.794 1.749.771.751 2.563-2.5zm7 1.5h-5v1h5v-1z" /></svg>}
+                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24"><path d="M23 17h-22v7h22v-7zm-20 5l.863-3h1.275l-.863 3h-1.275zm2.066 0l.863-3h1.275l-.863 3h-1.275zm2.067 0l.863-3h1.275l-.864 3h-1.274zm2.066 0l.863-3h1.274l-.863 3h-1.274zm3.341 0h-1.274l.863-3h1.275l-.864 3zm7.46-.5c-.552 0-1-.448-1-1s.448-1 1-1c.553 0 1 .448 1 1s-.447 1-1 1zm1-19.5v11h-18v-11h18zm2-2h-22v15h22v-15zm-13 7.5l-2.563-2.5-.771.751 1.794 1.749-1.794 1.749.771.751 2.563-2.5zm7 1.5h-5v1h5v-1z" /></svg>}
                     Title={<p className="text-xl">React</p>}
-                    SubTitle={<p className="text-sm text-justify">Programming in React is my passion. Simplified web creation.</p>}
+                    SubTitle={<p className="text-sm text-center sm:text-justify">Programming in React is my passion. Simplified web creation.</p>}
                 />
 
-                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M10.26 4.171c-.58-.286-1.093-.517-1.581-.719.77-2.08 1.882-3.452 3.321-3.452 1.402 0 2.494 1.301 3.26 3.292-.492.211-.998.447-1.572.739-.588-1.567-1.258-2.275-1.688-2.275-.442 0-1.14.75-1.74 2.415zm1.74 18.073c-.429 0-1.1-.708-1.688-2.275-.58.295-1.081.528-1.572.739.767 1.991 1.858 3.292 3.26 3.292 1.439 0 2.551-1.372 3.321-3.452-.485-.201-.997-.431-1.581-.719-.6 1.665-1.298 2.415-1.74 2.415zm-4.708-2.216c-1.917.705-4.778 1.392-5.916-.317-.562-.845-.771-2.468 1.42-5.408.582-.78 1.254-1.545 1.937-2.249 1.531-1.554 3.256-3.05 5.505-4.598-1.083-.596-2.264-1.166-3.416-1.591-1.18-.434-2.219-.675-3.015-.675-.508 0-.886.107-1.009.289-.131.192-.138.783.445 1.842l.21-.012c1.048 0 1.897.865 1.897 1.932s-.85 1.932-1.897 1.932-1.897-.865-1.897-1.932c0-.345.089-.669.246-.95-1.11-1.96-.881-3.139-.419-3.815.324-.476 1.009-1.042 2.424-1.042 2.514 0 5.901 1.66 8.082 2.946 2.214-1.363 5.717-3.16 8.304-3.16 1.421 0 2.106.581 2.431 1.069.562.845.771 2.468-1.42 5.407-3.084 4.137-9.216 8.606-13.912 10.332zm12.538-11.394c1.506-2.019 1.552-3.082 1.366-3.361-.126-.189-.492-.298-1.003-.298-1.953 0-4.926 1.459-6.638 2.447 1.265.837 2.445 1.719 3.522 2.617-.407.413-.834.819-1.271 1.211-1.195-.984-2.523-1.947-3.9-2.811-1.581 1.037-3.173 2.254-4.603 3.551 1.075.951 2.356 1.949 3.721 2.873-.522.331-1.05.648-1.652.98l-.013-.009c-1.144-.811-2.271-1.701-3.316-2.632-2.818 2.878-3.612 4.964-3.239 5.525.126.189.492.298 1.003.298 2.35 0 6.08-2.017 8.287-3.464 2.709-1.776 5.799-4.328 7.736-6.927zm2.377 7.091c.141-.27.22-.577.22-.903 0-1.067-.849-1.932-1.897-1.932s-1.897.865-1.897 1.932.849 1.932 1.897 1.932l.258-.018c.553 1.024.544 1.598.415 1.787-.124.181-.501.288-1.009.288-1.602 0-3.833-.945-5.27-1.658-.48.342-1.077.748-1.659 1.119 1.926 1.037 4.758 2.295 6.929 2.295 1.415 0 2.1-.566 2.424-1.042.461-.674.69-1.85-.411-3.8z" /></svg>}
+                <CardForWhatICode SVG={<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24"><path d="M10.26 4.171c-.58-.286-1.093-.517-1.581-.719.77-2.08 1.882-3.452 3.321-3.452 1.402 0 2.494 1.301 3.26 3.292-.492.211-.998.447-1.572.739-.588-1.567-1.258-2.275-1.688-2.275-.442 0-1.14.75-1.74 2.415zm1.74 18.073c-.429 0-1.1-.708-1.688-2.275-.58.295-1.081.528-1.572.739.767 1.991 1.858 3.292 3.26 3.292 1.439 0 2.551-1.372 3.321-3.452-.485-.201-.997-.431-1.581-.719-.6 1.665-1.298 2.415-1.74 2.415zm-4.708-2.216c-1.917.705-4.778 1.392-5.916-.317-.562-.845-.771-2.468 1.42-5.408.582-.78 1.254-1.545 1.937-2.249 1.531-1.554 3.256-3.05 5.505-4.598-1.083-.596-2.264-1.166-3.416-1.591-1.18-.434-2.219-.675-3.015-.675-.508 0-.886.107-1.009.289-.131.192-.138.783.445 1.842l.21-.012c1.048 0 1.897.865 1.897 1.932s-.85 1.932-1.897 1.932-1.897-.865-1.897-1.932c0-.345.089-.669.246-.95-1.11-1.96-.881-3.139-.419-3.815.324-.476 1.009-1.042 2.424-1.042 2.514 0 5.901 1.66 8.082 2.946 2.214-1.363 5.717-3.16 8.304-3.16 1.421 0 2.106.581 2.431 1.069.562.845.771 2.468-1.42 5.407-3.084 4.137-9.216 8.606-13.912 10.332zm12.538-11.394c1.506-2.019 1.552-3.082 1.366-3.361-.126-.189-.492-.298-1.003-.298-1.953 0-4.926 1.459-6.638 2.447 1.265.837 2.445 1.719 3.522 2.617-.407.413-.834.819-1.271 1.211-1.195-.984-2.523-1.947-3.9-2.811-1.581 1.037-3.173 2.254-4.603 3.551 1.075.951 2.356 1.949 3.721 2.873-.522.331-1.05.648-1.652.98l-.013-.009c-1.144-.811-2.271-1.701-3.316-2.632-2.818 2.878-3.612 4.964-3.239 5.525.126.189.492.298 1.003.298 2.35 0 6.08-2.017 8.287-3.464 2.709-1.776 5.799-4.328 7.736-6.927zm2.377 7.091c.141-.27.22-.577.22-.903 0-1.067-.849-1.932-1.897-1.932s-1.897.865-1.897 1.932.849 1.932 1.897 1.932l.258-.018c.553 1.024.544 1.598.415 1.787-.124.181-.501.288-1.009.288-1.602 0-3.833-.945-5.27-1.658-.48.342-1.077.748-1.659 1.119 1.926 1.037 4.758 2.295 6.929 2.295 1.415 0 2.1-.566 2.424-1.042.461-.674.69-1.85-.411-3.8z" /></svg>}
                     Title={<p className="text-xl">Next JS</p>}
-                    SubTitle={<p className="text-sm text-justify">Programming in Next is my passion. Simplified web creation.</p>}
+                    SubTitle={<p className="text-sm text-center sm:text-justify">Programming in Next is my passion. Simplified web creation.</p>}
                 />
             </div>
 

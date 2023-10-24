@@ -16,7 +16,6 @@ export function LeftCollumn() {
 
     const handleClick = () => {
         setShowMoreClicked(!isShowMoreClicked)
-        console.log(!isShowMoreClicked)
     };
 
     return (
