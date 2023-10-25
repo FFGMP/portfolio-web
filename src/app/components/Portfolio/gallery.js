@@ -133,7 +133,7 @@ const imagesData = [
 export function Gallery({ filter }) {
     return (
         <div className='flex justify-center mt-3 mb-11'>
-            <div className='grid grid-cols-3 gap-14 auto-cols-max'>
+            <div className='flex flex-wrap px-8 max-md:justify-center gap-14 auto-cols-max'>
                 <Images filter={filter} />
             </div>
         </div>
