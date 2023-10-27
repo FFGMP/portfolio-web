@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="dark" lang="en">
       <body className={inter.className}>
         <main>
           <div className="max-w-screen-xl flex flex-wrap justify-center gap-2 sm:gap-6 mx-auto p-2">

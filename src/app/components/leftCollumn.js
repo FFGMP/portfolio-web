@@ -19,8 +19,8 @@ export function LeftCollumn() {
     };
 
     return (
-        <div id="LeftOne" className={`transition-all duration-700 xl:duration-0 ease-out w-full sm:w-[39rem] lg:w-[62rem] xl:w-[23%] 
-        xl:max-h-max ${isShowMoreClicked ? "h-96" : "h-44"} xl:h-full sm:mt-10 xl:sticky rounded-md bg-neutral-900 border-[1px] border-neutral-700`}>
+        <div id="LeftOne" className={`transition-all duration-500 xl:duration-0 ease-out w-full sm:w-[39rem] lg:w-[62rem] xl:w-[23%] 
+        xl:max-h-max ${isShowMoreClicked ? "h-[482px]" : "h-[178px]"} xl:h-full sm:mt-10 xl:sticky rounded-md bg-neutral-900 border-[1px] border-neutral-700`}>
             <div className={`relative items-center justify-start flex p-5 xl:flex-col xl:justify-center xl:items-center ${isShowMoreClicked ? "" : ""}`}>
                 <div onClick={handleClick} className="xl:hidden absolute top-0 right-0 p-2 border-l border-b rounded-bl-lg bg-neutral-800 shadow-md shadow-neutral-700 cursor-pointer">
                     <button>
@@ -32,16 +32,15 @@ export function LeftCollumn() {
                         <path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z" />
                     </svg>
                 </div>
-                <div className="ml-5">
-                    <h1 className="text-center text-3xl mb-5 xl:mt-4 xl:text-xl">FFGMP</h1>
+                <div className="ml-5 xl:ml-0">
+                    <h1 className="text-center text-3xl xl:mt-4 xl:text-xl">FFGMP</h1>
                     <div className="xl:mt-2 xl:max-w-fit bg-neutral-800 px-4 py-1 rounded-lg">
                         <p className="text-xs sm:text-sm">Programmer</p>
-                        {/* Linha hr */}
                     </div>
                 </div>
             </div >
-            <div className={`flex flex-col items-start xl:items-center ml-5 last:mb-3 xl:last:mb-0 ${isShowMoreClicked ? "" : "max-xl:hidden visible"}`}>
-                <hr className="w-8/12 mt-0 mb-5 opacity-20 mx-auto" />
+            <div className={`flex flex-col items-start xl:items-center ml-5 xl:ml-0 ${isShowMoreClicked ? "" : "max-xl:hidden visible"}`}>
+                <hr className="w-8/12 mt-4 xl:mt-0 mb-6 opacity-20 mx-auto" />
 
                 <CardForAbouts SVG={<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" /></svg>}
                     Title={<p className="text-xs">EMAIL</p>}
@@ -57,8 +56,15 @@ export function LeftCollumn() {
                     Title={<p className="text-xs">GITHUB</p>}
                     SubTitle={<a className="hover:underline hover:text-blue-300 visited:text-purple-300" href="https://github.com/FFGMP"><p className="text-sm">github.com/FFGMP/</p></a>}
                 />
-            </div>
 
+                <hr className="w-8/12 mt-4 xl:mt-0 mb-4 opacity-20 mx-auto" />
+
+                <div className="flex self-center mb-4">
+                    <button className="bg-neutral-800 p-2 rounded-md shadow-sm shadow-neutral-950">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5zm-4.184-.599l-3.593-3.594-1.415 1.414 3.595 3.595c.401-.537.876-1.013 1.413-1.415zm4.184-1.401c.34 0 .672.033 1 .08v-5.08h-2v5.08c.328-.047.66-.08 1-.08zm5.598 2.815l3.595-3.595-1.414-1.414-3.595 3.595c.537.402 1.012.878 1.414 1.414zm-12.598 4.185c0-.34.033-.672.08-1h-5.08v2h5.08c-.047-.328-.08-.66-.08-1zm11.185 5.598l3.594 3.593 1.415-1.414-3.594-3.593c-.403.536-.879 1.012-1.415 1.414zm-9.784-1.414l-3.593 3.593 1.414 1.414 3.593-3.593c-.536-.402-1.011-.877-1.414-1.414zm12.519-5.184c.047.328.08.66.08 1s-.033.672-.08 1h5.08v-2h-5.08zm-6.92 8c-.34 0-.672-.033-1-.08v5.08h2v-5.08c-.328.047-.66.08-1 .08z" /></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

@@ -71,9 +71,9 @@ export function Resume_RightCollumn() {
 
     return (
         <div className="relative">
-            <h1 className="text-3xl ml-3 sm:ml-8 pt-6 mb-3 sm:mb-5">Resume</h1>
+            <h1 className="text-3xl pl-8 pt-6 pb-5">Resume</h1>
             <Menu />
-            <hr className="w-16 sm:w-40 h-2 ml-3 sm:ml-8 bg-current border-0 rounded-md" />
+            <hr className="w-40 h-2 mx-8 bg-current border-0 rounded-md" />
 
             <div className='flex flex-row ml-2 sm:ml-10 mt-6 items-center flex-wrap mb-3'>
                 <div className="p-2 rounded-md bg-gradient-to-l from-neutral-900 to-neutral-950">

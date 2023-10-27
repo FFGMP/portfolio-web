@@ -13,7 +13,7 @@ const CardForWhatICode = ({ SVG, Title, SubTitle }) => (
 );
 
 const CardWithSoftware = ({ SVG, Title }) => (
-    <div>
+    <div className="first:snap-center last:snap-center">
         <div>
             {SVG}
         </div>
@@ -70,7 +70,7 @@ export function About_RightCollumn() {
 
             <h1 className="text-3xl pl-8 pt-6 pb-5 mb-3">What software?</h1>
 
-            <div className="flex overflow-auto px-8 gap-10 md:gap-20 lg:gap-28 mb-6">
+            <div className="flex overflow-auto px-8 gap-10 md:gap-20 lg:gap-28 mb-6 snap-mandatory snap-x">
 
                 <CardWithSoftware
                     SVG={<svg width="90" height="90" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
