@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import LeftCollumn from './components/leftCollumn'
+import { LeftCollumn } from './components/leftCollumn'
+import { cookies } from 'next/headers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,9 +11,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const theme = cookies().get("theme")?.value;
   return (
-    <html className="dark" lang="en">
-      <body className={inter.className}>
+    <html className={theme != undefined ? cookies().get("theme").value : "dark"} lang="en">
+      <body className={inter.className + " bg-gray-300 dark:bg-neutral-800"}>
         <main>
           <div className="max-w-screen-xl flex flex-wrap justify-center gap-2 sm:gap-6 mx-auto p-2">
             <LeftCollumn />

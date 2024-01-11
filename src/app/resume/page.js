@@ -3,7 +3,7 @@ import Menu from "../components/Menu/menu";
 const SectionTimelineListEducation = ({ data }) => (
     <ul>
         {data.map((item, index) => (
-            <li id={index}>
+            <li key={index} id={index}>
                 <div className={`relative after:absolute after:left-[1.55rem] sm:after:left-[3.71rem] after:top-3 after:rounded-lg after:ring-1 after:h-2 after:w-2 after:ring-current ${index !== data.length - 1 ? "before:w-0.5 before:rounded-md before:bg-neutral-700 before:absolute before:last:h-[calc(100%+67px)] before:-top-3 before:ml-7 sm:before:ml-[3.9rem]" : ""}`}>
                     <div className='ml-12 sm:ml-[6.1rem] pr-4 sm:pr-20'>
                         <h1 className='text-xl'>{item.Title}</h1>
@@ -25,7 +25,7 @@ const dataForSectionListEducation = [
 const SectionTimelineListExperience = ({ data }) => (
     <ul>
         {data.map((item, index) => (
-            <li id={index}>
+            <li key={index} id={index}>
                 <div className={`relative after:absolute after:left-[1.55rem] sm:after:left-[3.71rem] after:top-3 after:rounded-lg after:ring-1 after:h-2 after:w-2 after:ring-current ${index !== data.length - 1 ? "before:w-0.5 before:rounded-md before:bg-neutral-700 before:absolute before:last:h-[calc(100%+67px)] before:-top-3 before:ml-7 sm:before:ml-[3.9rem]" : ""}`}>
                     <div className='ml-12 sm:ml-[6.1rem] pr-4 sm:pr-20'>
                         <h1 className='text-xl'>{item.Title}</h1>
