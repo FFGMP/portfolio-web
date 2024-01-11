@@ -46,86 +46,86 @@ const imagesData = [
         id: 1,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 2,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 3,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 4,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 5,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 6,
         category: 'applications',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 7,
         category: 'applications',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 8,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 9,
         category: 'applications',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 10,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 11,
         category: 'websites',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }, {
         id: 12,
         category: 'applications',
         image: Photo,
-        title: 'Dog Title',
-        subtitle: 'Dog Subtitle',
-        alt: 'Dog'
+        title: 'Title',
+        subtitle: 'Subtitle',
+        alt: 'Mock-Up'
     }
 ]
 

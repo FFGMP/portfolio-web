@@ -1,3 +1,35 @@
+## Portfolio FFGMP
+
+This is a web-based version of my portfolio, designed to showcase my projects and skills.
+
+
+## Showcase
+
+### About me
+![About me](./ReadmeImages/image.png)
+
+### Resume
+![Resume](./ReadmeImages/image-1.png)
+
+### Portfolio
+![Portfolio](./ReadmeImages/image-2.png)
+
+### Contact
+![Contact](./ReadmeImages/image-3.png)
+
+
+## Creation Process
+
+Technologies used: Next.js, TailwindCSS
+
+This project was built entirely using Next.js and TailwindCSS. The design was heavily inspired by [vCard - Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio/). I aimed to replicate the original as closely as possible to hone my CSS and JS skills with a specific goal in mind, without making any changes.
+
+## Lessons Learned
+
+I knew a little about Next.js and its functionalities before starting this project. However, by the end of it, I had significantly improved my skills with this framework.
+
+## Running the Project Locally
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
